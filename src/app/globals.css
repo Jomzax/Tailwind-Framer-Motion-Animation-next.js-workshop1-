@@ -1,0 +1,35 @@
+@config "../../tailwind.config.ts";
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+ --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  font-family: var(--font-kanit)
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+@layer components {
+  .img-shadow {
+    filter: drop-shadow(40px 50px 25px #0f1115);
+  }
+
+  .img-shadow2 {
+    filter: drop-shadow(10px 30px 15px #0f1115);
+  }
+}
