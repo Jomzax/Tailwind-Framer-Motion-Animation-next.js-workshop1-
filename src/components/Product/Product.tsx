@@ -95,17 +95,22 @@ const Card = ({ product }: CardProps) => {
         <>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 {product.map((item) => (
-                    <div 
+                    <div
                         key={item.id}
-                        className=""
+                        className="flex= flex-col space-y-4 items-center justify-center"
                     >
                         <Image
+                            className="img-shadow2 max-w-[200px] mx-auto hover:scale-110 transition-all duration-300 cursor-pointer"
                             src={item.image}
                             alt={item.title}
                             width={200}
                             height={100}
                         />
-
+                        <div className="flex  flex-col items-center justify-center py-4 ">
+                            <h2 className="text-2xl  font-bold text-primary">{item.title}</h2>
+                            <p>{item.subtitle}</p>
+                            <p className="text-xl font-bold">${item.price.toFixed(2)}</p>
+                        </div>
                     </div>
                 ))}
             </div>

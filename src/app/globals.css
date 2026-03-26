@@ -30,6 +30,6 @@ body {
   }
 
   .img-shadow2 {
-    filter: drop-shadow(10px 30px 15px #0f1115);
+    filter: drop-shadow(10px 25px 25px #0f1115);
   }
 }
