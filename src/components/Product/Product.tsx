@@ -39,14 +39,23 @@ const Product = () => {
     ];
     return (
         <>
-            <div className="container my-16 space-y-4">
+            <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                    type: "spring",
+                    stiffness: 100,
+                    damping: 10,
+                    delay: 0.3,
+                }}
+                className="container my-16 space-y-4">
                 {/* section header */}
                 <Header />
 
                 {/*card section */}
                 <Card product={productData} />
 
-            </div>
+            </motion.div>
         </>
     );
 };

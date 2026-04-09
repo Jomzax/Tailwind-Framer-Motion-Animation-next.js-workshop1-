@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Kanit } from "next/font/google";
-import ScrollReset from "@/components/ScrollReset/ScrollReset";
+// import ScrollReset from "@/components/ScrollReset/ScrollReset";
 import "./globals.css";
 
 const kanit = Kanit({
@@ -25,7 +25,7 @@ export default function RootLayout({
       <body
         className={`${kanit.variable}$antialiased`}
       >
-        <ScrollReset />
+        {/* <ScrollReset /> */}
         {children}
       </body>
     </html>

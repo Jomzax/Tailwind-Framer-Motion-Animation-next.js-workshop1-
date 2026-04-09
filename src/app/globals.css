@@ -24,7 +24,7 @@ body {
 }
 
 
-@layer components {
+@layer utilities {
   .img-shadow {
     filter: drop-shadow(40px 50px 25px #0f1115);
   }
@@ -32,4 +32,14 @@ body {
   .img-shadow2 {
     filter: drop-shadow(10px 25px 25px #0f1115);
   }
+
+  .input-style {
+    @apply px-4 py-2 rounded-md border-gray-400
+    border-[1px]
+  }
+
+  .primary-btn{
+    @apply px-4 py-2  rounded-md  bg-primary text-white
+  }
+
 }
